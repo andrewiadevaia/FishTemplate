@@ -3,14 +3,15 @@ mkdir -p /temp
 
 apt-get update
 apt-get upgrade -y
+apt-get install gpg git sudo curl wget nano htop exa tree net-tools -y
 
 # Add the fish repo
-gpg --homedir /tmp --no-default-keyring --keyring /usr/share/keyrings/fish.gpg   --keyserver keyserver.ubuntu.com --recv-keys 59FDA1CE1B84B3FAD89366C027557F056DC33CA5
+gpg --homedir /tmp --no-default-keyring --keyring /usr/share/keyrings/fish.gpg --keyserver keyserver.ubuntu.com --recv-keys 59FDA1CE1B84B3FAD89366C027557F056DC33CA5
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/fish.gpg] https://ppa.launchpadcontent.net/fish-shell/release-3/ubuntu jammy main" | sudo tee /etc/apt/sources.list.d/fish-shell.list > /dev/null
 apt-get update
 
 # Install Packages
-apt install git sudo curl wget nano htop exa tree python3-pip fzf fd-find fish bat tree net-tools -y
+apt install fd-find fish bat  -y
 
 # Clone repo and copy to home directory
 git clone https://github.com/andrewiadevaia/FishTemplate.git /temp/FishTemplate
