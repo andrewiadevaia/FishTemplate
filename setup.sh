@@ -12,6 +12,10 @@ apt-get update
 # Install Packages
 apt install git sudo curl wget nano htop exa tree python3-pip fzf fd-find fish bat tree net-tools -y
 
+# Clone repo and copy to home directory
+git clone https://github.com/andrewiadevaia/FishTemplate.git /temp/FishTemplate
+cp -r /temp/FishTemplate/.config ~/
+
 # Install FZF
 git clone --depth 1 https://github.com/junegunn/fzf.git /temp/.fzf
 /temp/.fzf/install --bin
