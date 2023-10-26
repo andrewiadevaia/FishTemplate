@@ -11,6 +11,6 @@ alias ll="ls -a --header --group"
 
 alias bat='batcat --paging=never --color=always --style="header,grid"'
 
-fzf_configure_bindings --directory=\ef --variables=\ce --processes=\cp
+fzf_configure_bindings --directory=\cf --variables=\ce --processes=\cp
 
 starship init fish | source
