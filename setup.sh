@@ -17,6 +17,8 @@ apt install fd-find fish bat  -y
 git clone https://github.com/andrewiadevaia/FishTemplate.git /temp/FishTemplate
 cp -r /temp/FishTemplate/.config ~/
 
+cp /temp/FishTemplate/gitconfig/* ~
+
 # Install FZF
 git clone --depth 1 https://github.com/junegunn/fzf.git /temp/.fzf
 /temp/.fzf/install --bin

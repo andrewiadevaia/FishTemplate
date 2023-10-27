@@ -1,0 +1,6 @@
+[user]
+    name = "Iadevaia, Andrew Thomas"
+    email = "aiadevaia@pace.edu"
+
+[commit]
+    template = ~/.gitmessage
