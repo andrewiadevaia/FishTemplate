@@ -10,8 +10,12 @@ gpg --homedir /tmp --no-default-keyring --keyring /usr/share/keyrings/fish.gpg -
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/fish.gpg] https://ppa.launchpadcontent.net/fish-shell/release-3/ubuntu jammy main" | sudo tee /etc/apt/sources.list.d/fish-shell.list > /dev/null
 apt-get update
 
+# Install batcat
+wget https://github.com/sharkdp/bat/releases/download/v0.24.0/bat_0.24.0_amd64.deb
+sudo dpkg -i bat_0.24.0_amd64.deb
+
 # Install Packages
-apt install fd-find fish bat  -y
+apt install fd-find fish  -y
 
 # Clone repo and copy to home directory
 git clone https://github.com/andrewiadevaia/FishTemplate.git /temp/FishTemplate
