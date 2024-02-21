@@ -3,7 +3,7 @@ mkdir -p /temp
 
 apt-get update
 apt-get upgrade -y
-apt-get install gpg git sudo curl wget nano htop exa tree net-tools -y
+apt-get install gpg git sudo curl wget nano htop exa tree net-tools unzip python3 python3-pip python3-dev -y
 
 # Add the fish repo
 gpg --homedir /tmp --no-default-keyring --keyring /usr/share/keyrings/fish.gpg --keyserver keyserver.ubuntu.com --recv-keys 59FDA1CE1B84B3FAD89366C027557F056DC33CA5
